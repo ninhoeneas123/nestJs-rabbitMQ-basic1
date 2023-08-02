@@ -1,4 +1,7 @@
-This is a basic microservice project.
+Este é um projeto basico, nele contem 1 API gateway e 1 microserviço(user-consumer) que se comunica a um banco de dados Mongodb, a comunicação é realizada atraves do RabbitMQ.
+
+No docker network possui uma rede docker configurada.
+Na pasta utils possui um arquivo docker-compose com a configuração do RabbitMQ e do banco de dado MongoDb
 
 ## Como instalar:
 
