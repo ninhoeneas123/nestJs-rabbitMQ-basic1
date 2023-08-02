@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  nestjs-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3003:3003"
+networks:
+  default:
+    external:
+      name: docker-network_my_custom_network

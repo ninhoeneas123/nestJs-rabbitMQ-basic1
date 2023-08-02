@@ -1,0 +1,12 @@
+version: '3'
+services:
+  network:
+    image: alpine code
+    command: tail -f /dev/null  
+    networks:
+      my_custom_network:
+        aliases:
+          - shared_network
+networks:
+  my_custom_network:
+    driver: bridge  

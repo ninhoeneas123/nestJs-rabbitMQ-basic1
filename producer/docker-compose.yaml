@@ -1,0 +1,15 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: producer-nestjs-app
+    container_name: producer-nestjs-app-container
+    restart: always
+    ports:
+      - '3000:3000'
+networks:
+  default:
+    external:
+      name: docker-network_my_custom_network
